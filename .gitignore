@@ -4,3 +4,8 @@
 
 ### vim files ###
 *.un~
+
+### other test output ###
+example-input-files/
+jobs/g*
+jobs/z*
