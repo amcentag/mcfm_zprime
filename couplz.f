@@ -36,7 +36,7 @@ c---xw=sin^2 theta_w
       ! contrib = 2: photon/Z'
       contrib = 0
 
-        if (model == 0) then
+        if (contrib == 0) then
             do j=1,nf
                 l(j) = 0._dp
                 r(j) = 0._dp
@@ -47,7 +47,7 @@ c---xw=sin^2 theta_w
             rn = 0._dp
         endif
 
-      if (model == 1) then
+      if (contrib == 1) then
           do j=1,nf
           l(j)=(tau(j)-two*Q(j)*xw)/sin2w
           r(j)=      (-two*Q(j)*xw)/sin2w
@@ -61,7 +61,7 @@ c---xw=sin^2 theta_w
       endif
 
         ! heterotic string model charges from 1807.08031, Table 3, pg 14
-        if (model == 2) then
+        if (contrib == 2) then
             do j=1,nf
             l(j) = -2._dp/5._dp/sin2w*gz + 1._dp/6._dp/sin2w*gkm
             enddo
