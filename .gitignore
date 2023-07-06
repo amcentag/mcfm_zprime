@@ -1,0 +1,6 @@
+### compiled files ###
+*.o
+*.exe
+
+### vim files ###
+*.un~
