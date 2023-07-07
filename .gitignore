@@ -5,7 +5,7 @@
 ### vim files ###
 *.un~
 
-### other test output ###
-example-input-files/
+### other ###
 jobs/g*
 jobs/z*
+todo.txt
