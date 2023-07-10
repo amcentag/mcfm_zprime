@@ -58,10 +58,10 @@ do
     done
 done
 
-#for i in {0..58}
-#do
-    #for j in {0..3}
-    #do
-        # qsub my-$i-$j.job
-    #done
-#done
+for i in {0..58}
+do
+    for j in {0..3}
+    do
+         qsub my-$i-$j.job
+    done
+done
