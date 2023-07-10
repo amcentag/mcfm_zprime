@@ -5,5 +5,5 @@
 
 module load gcc/10.2.0
 export OMP_STACKSIZE=16000
-cd /PATH/CuTe-MCFM/Bin
+cd /home/mcentag/Documents/CuTe-MCFM/Bin
 ./mcfm input_Z.ini

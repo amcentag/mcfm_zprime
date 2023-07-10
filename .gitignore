@@ -6,6 +6,5 @@
 *.un~
 
 ### other ###
-jobs/g*
-jobs/z*
+jobs/my*
 todo.txt
