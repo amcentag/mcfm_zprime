@@ -30,6 +30,8 @@ c---xw=sin^2 theta_w
       real(dp):: gz,gkm
       integer:: contrib
       sin2w=two*sqrt(xw*(1._dp-xw))
+      gz = 0.3574_dp
+      gkm = 0._dp
 
       ! contrib = 0: photon only (Z couplings set to zero)
       ! contrib = 1: photon/Z
