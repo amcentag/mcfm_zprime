@@ -145,7 +145,7 @@ module nplotter_Z
           costhetastar = tanh((etarap(3,p)-etarap(4,p))/2._dp)
           phistar = tan(phiacop/2._dp)*sin(acos(costhetastar))
 
-          costheta = 1.0d0/(m34*sqrt(m34**2d0+pt34**2d0))*((p(3,4)+p(3,3))*(p(4,4)-p(4,3))-(p(3,4)-p(3,3))*(p(4,4)+p(4,3)))
+          costheta = (p(3,3)+p(4,3))/abs(p(3,3)+p(4,3))*1._dp/(m34*sqrt(m34**2d0+pt34**2d0))*((p(3,4)+p(3,3))*(p(4,4)-p(4,3))-(p(3,4)-p(3,3))*(p(4,4)+p(4,3)))
           afb = m34*abs(costheta)/costheta
 
           if (origKpart == kresummed) then
